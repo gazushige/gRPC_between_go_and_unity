@@ -1,0 +1,4 @@
+*.gz
+*_plugin
+*.sh
+protoc

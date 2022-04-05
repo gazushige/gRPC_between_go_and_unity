@@ -1,0 +1,17 @@
+syntax="proto3";
+
+package grpc;
+
+option go_package = "../pb";
+
+message Request {
+    string text=1;
+    }
+
+message Response {
+    string text=1;
+    }
+
+service Test{
+    rpc GrpcTest(Request) returns (Response) {}
+}
